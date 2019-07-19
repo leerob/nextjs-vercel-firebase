@@ -1,0 +1,22 @@
+{
+    "name": "api",
+    "version": "0.0.0",
+    "author": {
+        "name": "Lee Robinson",
+        "email": "me@leerob.io",
+        "url": "https://leerob.io"
+    },
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@firebase/app-types": "0.3.10",
+        "@firebase/util": "0.2.14",
+        "body-parser": "1.18.3",
+        "cors": "^2.8.5",
+        "express": "4.16.4",
+        "firebase": "5.9.3",
+        "firebase-admin": "7.2.0"
+    },
+    "scripts": {
+        "start": "node server-dev.js"
+    }
+}
