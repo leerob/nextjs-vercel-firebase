@@ -1,13 +1,13 @@
-> _Next 9 Update_: The preferred way to handle this now is with [API routes](https://nextjs.org/docs/api-routes/introduction) (e.g., `/pages/api/cities.js`) and [bracket notation](https://nextjs.org/docs/routing/dynamic-routes) (e.g., `/pages/[city].js`). This prevents the need for a Monorepo, as everything can be contained inside one application. It also removes the complexity of having a custom server, dealing with CORS, and configuring routes via Now. 
+> _Next 9 Update_: The preferred way to handle this now is with [API routes](https://nextjs.org/docs/api-routes/introduction) (e.g., `/pages/api/cities.js`) and [bracket notation](https://nextjs.org/docs/routing/dynamic-routes) (e.g., `/pages/[city].js`). This prevents the need for a Monorepo, as everything can be contained inside one application. It also removes the complexity of having a custom server, dealing with CORS, and configuring routes via Vercel. 
 
-# Next.js + Now + Firebase
+# Next.js + Vercel + Firebase
 
 > An example of a Monorepo to deploy a Firebase Node API alongside a Next.js app.
 
 ## Built With
 
 -   [Next.js](https://nextjs.org/)
--   [Now](https://zeit.co/now)
+-   [Vercel](https://vercel.com)
 -   [Firebase](https://firebase.google.com)
 
 ## Running Locally
