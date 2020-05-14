@@ -1,29 +1,26 @@
-> _Next 9 Update_: The preferred way to handle this now is with [API routes](https://nextjs.org/docs/api-routes/introduction) (e.g., `/pages/api/cities.js`) and [bracket notation](https://nextjs.org/docs/routing/dynamic-routes) (e.g., `/pages/[city].js`). This prevents the need for a Monorepo, as everything can be contained inside one application. It also removes the complexity of having a custom server, dealing with CORS, and configuring routes via Vercel. 
-
 # Next.js + Vercel + Firebase
 
-> An example of a Monorepo to deploy a Firebase Node API alongside a Next.js app.
+> Next.js app using API routes to connect with Firestore.
 
 ## Built With
 
--   [Next.js](https://nextjs.org/)
--   [Vercel](https://vercel.com)
--   [Firebase](https://firebase.google.com)
+- [Next.js](https://nextjs.org/)
+- [Vercel](https://vercel.com)
+- [Firebase](https://firebase.google.com)
 
 ## Running Locally
 
 ### Setup
 
 1. Create a project in [Firebase](https://firebase.google.com/docs/firestore/quickstart).
-1. You will need to add your Firebase Service Account in `/app/.firebase/service-account.json`.
-1. Update your `databaseURL` in `server.js`.
-1. Modify the route in `routes/api/index.js` to match your database structure.
-1. `now.json` as well as `/pages/city.js` can then be modified to match your database structure.
+1. Download your Firebase Service Account.
+1. Create a new file `.env.local` and add environment variables (see `.env` for example).
+1. Modify the API route to match your database structure.
 
-### Start API Server
+### Run Locally
 
 ```
-$ now dev
+$ vc dev
 ```
 
 Next.js app + API available at http://localhost:3000.
@@ -33,5 +30,5 @@ Next.js app + API available at http://localhost:3000.
 From the root directory.
 
 ```
-$ now --target production
+$ vc --prod
 ```
