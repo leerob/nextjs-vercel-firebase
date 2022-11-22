@@ -6,11 +6,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "firebase-admin": "^10.0.2",
-    "next": "12.0.10",
-    "react": "^18.0.0-rc.0",
-    "react-dom": "^18.0.0-rc.0",
-    "swr": "^1.2.1"
+    "@firebase/app-types": "^0.8.1",
+    "@types/react": "18.0.25",
+    "firebase-admin": "11.3.0",
+    "next": "13.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "server-only": "0.0.1",
+    "typescript": "4.9.3"
   },
   "prettier": {
     "arrowParens": "always",

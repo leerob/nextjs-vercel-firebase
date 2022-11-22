@@ -1,3 +1,5 @@
+import 'server-only';
+import { notFound } from 'next/navigation';
 import * as admin from 'firebase-admin';
 
 if (!admin.apps.length) {
@@ -12,4 +14,12 @@ if (!admin.apps.length) {
 
 const db = admin.firestore();
 
-export { db };
+export default async function Page() {
+  const user = await db.collection('users').doc('leerob').get();
+
+  if (!user.exists) {
+    notFound();
+  }
+
+  return <div>Hello, {user.data().name}!</div>;
+}
